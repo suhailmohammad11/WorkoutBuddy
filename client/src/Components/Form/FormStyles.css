@@ -1,0 +1,26 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    box-shadow: rgba(5, 5, 5, 0.25) 0px 2px 5px -1px;
+    border-radius: 5px;
+    padding:70px;
+}
+
+form input{
+    width:270px;
+    height:24px;
+    border-radius: 3px;
+    border-style:ridge;
+}
+
+.elements button {
+  display: block;
+  margin: 10px auto; /* centers horizontally */
+  background-color: var(--primary);
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
