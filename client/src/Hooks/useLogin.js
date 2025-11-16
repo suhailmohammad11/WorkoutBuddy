@@ -8,7 +8,7 @@ export const useLogin = () => {
   const login = async (email, password) => {
     setError(null);
     try {
-      const response = await fetch("http://localhost:4000/api/user/login", {
+      const response = await fetch("https://workoutbuddy-rwmb.onrender.com/api/user/login", {
         method: "POST",
         headers: { "content-type": "application/json"},
         body: JSON.stringify({ email, password }),

@@ -10,7 +10,7 @@ export const WorkoutContextProvider = ({ children }) => {
     //get request function
   
     const getWorkouts = async () => {
-      const response = await axios.get("http://localhost:4000/api/workouts", {
+      const response = await axios.get("https://workoutbuddy-rwmb.onrender.com/api/workouts", {
         headers:{
           "Authorization" : `Bearer ${user.token}`
         }
@@ -27,7 +27,7 @@ export const WorkoutContextProvider = ({ children }) => {
 
  //remove workout
   const deleteWorkout = async (_id) => {
-    await axios.delete(`http://localhost:4000/api/workouts/${_id}`,{
+    await axios.delete(`https://workoutbuddy-rwmb.onrender.com/api/workouts/${_id}`,{
        headers:{
           "Authorization" : `Bearer ${user.token}`
         }
